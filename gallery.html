@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Animal Gallery</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+   <script src="/script.js" defer></script>
+  </head>
+  <body>
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a href="index.html">Home</a>
+      <a href="about.html">About Us</a>
+      <a href="centers.html">Adoption Centers</a>
+    </div>
+
+    <div id="main">
+      <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Animal Gallery</span>
+    </div>
+    
+    <br>
+
+    <div class="Bbody">
+    <div id="myBtnContainer">
+      <button class="btnbtn active" onclick="filterSelection('all')"> Show all</button>
+      <button class="btnbtn" onclick="filterSelection('cats')">Cats</button>
+      <button class="btnbtn" onclick="filterSelection('kittens')">Kittens</button>
+      <button class="btnbtn" onclick="filterSelection('dogs')">Dogs</button>
+      <button class="btnbtn" onclick="filterSelection('puppies')">Puppies</button>
+      <button class="btnbtn" onclick="filterSelection('rabbits')">Rabbits</button>
+    </div>
+
+    <!-- Portfolio Gallery Grid -->
+    <div class="row">
+      <div class="column cats">
+        <div class="content">
+          <a href="cat1.html">
+          <img class="animal" src="cat1.img" alt="Cat" style="width:100%">
+          <h4>Papito</h4></a>
+          <p>12 years old</p>
+        </div>
+      </div>
+      <div class="column cats">
+        <div class="content">
+          <a href="cat2.html">
+          <img class="animal" src="cat2.img" alt="Cat" style="width:100%">
+          <h4>Flounder</h4></a>
+          <p>7 years old</p>
+        </div>
+      </div>
+      <div class="column cats">
+        <div class="content">
+          <a href="cat3.html">
+          <img class="animal" src="cat3.img" alt="Cat" style="width:100%">
+          <h4>Tommy</h4></a>
+          <p>2 years old</p>
+        </div>
+      </div>
+      <div class="column cats">
+        <div class="content">
+          <a href="cat4.html">
+          <img class="animal" src="cat4.img" alt="Cat" style="width:100%">
+          <h4>Rumi</h4></a>
+          <p>11 years old</p>
+        </div>
+      </div>
+      <div class="column cats">
+        <div class="content">
+          <a href="cat5.html">
+          <img class="animal" src="cat5.img" alt="Cat" style="width:100%">
+          <h4>Tiger S</h4></a>
+          <p>4 years old</p>
+        </div>
+      </div>
+      <div class="column cats">
+        <div class="content">
+          <a href="cat6.html">
+          <img class="animal" src="cat6.img" alt="Cat" style="width:100%">
+          <h4>Ricky</h4></a>
+          <p>1 year old</p>
+        </div>
+      </div>
+      <div class="column cats">
+        <div class="content">
+          <a href="cat7.html">
+          <img class="animal" src="cat7.img" alt="Cat" style="width:100%">
+          <h4>Liara/LuLu</h4></a>
+          <p>5 years and 10 months old</p>
+        </div>
+      </div>
+      
+      <div class="column kittens">
+        <div class="content">
+          <a href="kitten1.html">
+          <img class="animal" src="kitten1.img" alt="Kitten" style="width:100%">
+          <h4>Sonny</h4></a>
+          <p>3 months old</p>
+        </div>
+      </div>
+      <div class="column kittens">
+        <div class="content">
+          <a href= "kitten2.html">
+          <img class="animal" src="kitten2.img" alt="Kitten" style="width:100%">
+          <h4>Tuxedo Mask</h4></a>
+          <p>3 months old</p>
+        </div>
+      </div>
+      <div class="column kittens">
+        <div class="content">
+          <a href="kitten3.html">
+          <img class="animal" src="kitten3.img" alt="Kitten" style="width:100%">
+          <h4>Sailor Moon</h4></a>
+          <p>3 months old</p>
+        </div>
+      </div>
+      <div class="column kittens">
+        <div class="content">
+          <a href="kitten4.html">
+          <img class="animal" src="kitten4.img" alt="Kitten" style="width:100%">
+          <h4>Simone</h4></a>
+          <p>3 months old</p>
+        </div>
+      </div>
+      <div class="column kittens">
+        <div class="content">
+          <a href="kitten5.html">
+          <img class="animal" src="kitten5.img" alt="Kitten" style="width:100%">
+          <h4>Jeanette</h4></a>
+          <p>3 months old</p>
+        </div>
+      </div>
+      <div class="column kittens">
+        <div class="content">
+          <a href="kitten6.html">
+          <img class="animal" src="kitten6.img" alt="Kitten" style="width:100%">
+          <h4>Kitara</h4></a>
+          <p>3 months old</p>
+        </div>
+      </div>
+
+      <div class="column dogs">
+        <div class="content">
+          <a href="dog1.html">
+          <img class="animal" src="dog1.img" alt="Dog" style="width:100%">
+          <h4>Tiffany</h4></a>
+          <p>3 years old</p>
+        </div>
+      </div>
+      <div class="column dogs">
+        <div class="content">
+          <a href="dog2.html">
+          <img class="animal" src="dog2.img" alt="Dog" style="width:100%">
+          <h4>Craig</h4></a>
+          <p>2 years old</p>
+        </div>
+      </div>
+      <div class="column dogs">
+        <div class="content">
+          <a href="dog3.html">
+          <img class="animal" src="dog3.img" alt="Dog" style="width:100%">
+          <h4>Nova</h4></a>
+          <p>5 years old</p>
+        </div>
+      </div>
+      <div class="column dogs">
+        <div class="content">
+          <a href="dog4.html">
+          <img class="animal" src="dog4.img" alt="Dog" style="width:100%">
+          <h4>Sora</h4></a>
+          <p>7 years old</p>
+        </div>
+      </div>
+      <div class="column dogs">
+        <div class="content">
+          <a href="dog5.html">
+          <img class="animal" src="dog5.img" alt="Dog" style="width:100%">
+          <h4>Fendi</h4></a>
+          <p>4 years old</p>
+        </div>
+      </div>
+      <div class="column dogs">
+        <div class="content">
+          <a href="dog6.html">
+          <img class="animal" src="dog6.img" alt="Dog" style="width:100%">
+          <h4>Lily</h4></a>
+          <p>6 years old</p>
+        </div>
+      </div>
+      <div class="column dogs">
+        <div class="content">
+          <a href="dog7.html">
+          <img class="animal" src="dog7.img" alt="Dog" style="width:100%">
+          <h4>Bella</h4></a>
+          <p>1 year old</p>
+        </div>
+      </div>
+
+      <div class="column puppies">
+        <div class="content">
+          <a href="puppy1.html">
+          <img class="animal" src="https://www.shelterluv.com/sites/default/files/animal_pics/1235/2019/09/26/14/20190926145625.png" alt="Puppy" style="width:100%">
+          <h4>Monte</h4></a>
+          <p>1 year old</p>
+        </div>
+      </div>
+      <div class="column puppies">
+        <div class="content">
+        <a href ="puppy2.html">
+        <img class="animal" src="https://www.shelterluv.com/sites/default/files/animal_pics/1235/2019/11/11/13/20191111130552.png" alt="Puppy" style="width:100%">
+        <h4>Gnocchi</h4></a>
+        <p>1 years old</p>
+        </div>
+      </div>
+      <div class="column puppies">
+        <div class="content">
+        <a href="puppy3.html">
+        <img class="animal" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSdyoHfXmcVX8a-8r5isHMvi7L_Vz9f4JP1Ow&usqp=CAU" alt="Puppy" style="width:100%">
+          <h4>Spike</h4></a>
+          <p>6 months old</p>
+        </div>
+      </div>
+      <div class="column puppies">
+        <div class="content">
+        <a href="puppy4.html">
+        <img class="animal" src="https://www.rover.com/blog/wp-content/uploads/2018/11/chihuahua-810789_1920-960x540.jpg" alt="Puppy" style="width:100%">
+        <h4>Happy</h4></a>
+        <p>8 months old</p>
+        </div>
+      </div>
+      <div class="column puppies">
+        <div class="content">
+        <a href="puppy5.html">
+        <img class="animal" src="https://www.thesprucepets.com/thmb/COdGzNriu8oQVi8igXmSzFzXTRk=/2109x2109/smart/filters:no_upscale()/puppy-samoyed-boy-990077480-5c89719646e0fb00012c67e8.jpg" alt="Puppy" style="width:100%">
+        <h4>Coconut</h4></a>
+        <p>10 months old</p>
+        </div>
+      </div>
+
+      <div class="column rabbits">
+        <div class="content">
+          <a href="rabbit1.html">
+          <img class="animal" src="rabbit1.jpg" alt="Rabbit" style="width:100%">
+          <h4>Arnold</h4></a>
+          <p>~3 years old</p>
+        </div>
+      </div>
+      <div class="column rabbits">
+        <div class="content">
+          <a href="rabbit2.html">
+          <img class="animal" src="rabbit2.jpg" alt="Rabbit" style="width:100%">
+          <h4>Finnegan</h4></a>
+          <p>7 months</p>
+        </div>
+      </div>
+      <div class="column rabbits">
+        <div class="content">
+          <a href="rabbit3.html">
+          <img class="animal" src="rabbit3.jpg" alt="Rabbit" style="width:100%">
+          <h4>Nikki</h4></a>
+          <p>2 years old</p>
+        </div>
+      </div>
+      <div class="column rabbits">
+        <div class="content">
+          <a href="rabbit4.html">
+          <img class="animal" src="rabbit4.jpg" alt="Rabbit" style="width:100%">
+          <h4>Tippie</h4></a>
+          <p>1 year old</p>
+        </div>
+      </div>
+      <div class="column rabbits">
+        <div class="content">
+          <a href="rabbit5.html">
+          <img class="animal" src="rabbit5.jpg" alt="Rabbit" style="width:100%">
+          <h4>Gwendolyn</h4></a>
+          <p>1 year old</p>
+        </div>
+      </div>
+      <!-- END GRID -->
+    </div>
+    </div>
+  </body>
+
+  <footer>
+    <div class="footer">
+      <div class="footer-content">
+        <div class="footer-section about">
+          <h3>Stuff</h3>
+          <p>Stuff is a website that is intended to give adoption centers all over NYC that extra boost so that animals are able to find homes.</p>
+          <div class="contact">
+            <span><i class="material-icons" style="font-size:14px">&#xe551;</i> 123-456-7890</span>
+            <span><i class="material-icons" style="font-size:14px">&#xe0be;</i> animal@adopt.org</span>
+          </div>
+        </div>
+        <div class="footer-section links">
+          <h3>Quick Links</h3>
+          <br>
+          <ul>
+            <a style="text-decoration:none" href="index.html"><li>Home</li></a>
+            <a style="text-decoration:none" href="about.html"><li>About Us</li></a>
+            <a style="text-decoration:none" href="gallery.html"><li>Animal Gallery</li></a>
+            <a style="text-decoration:none" href="centers.html"><li>Adoption Centers</li></a>
+          </ul>
+        </div>
+        <div class="footer-section contact-form">
+          <h3>Contact us</h3>
+          <form action="index.html" method="post">
+            <input type="email" name="email" class="text-input contact-input" placeholder="Your email address...">
+            <textarea name="message" class="text-input contact-input" placeholder="Your message..."></textarea>
+            <button type="submit" class="btn btn-big contact-btn">
+              <i class="email"></i>
+              Send
+            </button>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        &copy; stuff.com | Designed by Alison Wu, April Li, Ayana Small
+      </div>
+    </div>
+  </footer>
+</html> 
