@@ -43,6 +43,13 @@
   margin-top: -9px;
   font-family: monospace;
 }
+.logo-image{
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-top: -6px;
+}
 /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
 @media screen and (max-height: 450px) {
   .sidenav {padding-top: 15px;}
@@ -318,4 +325,8 @@ li:hover{
 .center.active {
   background-color: #5E6472;
    color: white;
+}
+
+.ayana{
+  padding-bottom: 30px;
 }
